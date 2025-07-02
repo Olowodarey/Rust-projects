@@ -1,3 +1,4 @@
+
 use std::io;
 
 fn main() {
@@ -21,7 +22,7 @@ fn main() {
         let tokens: Vec<&str> = input.trim().split_whitespace().collect();
 
         if tokens.len() != 3 {
-            println!("Invalid ionput. Pls follow the format: number operator number😡😡😡"); // this func we checking to make sure that the user input is equal yto 3 the number and the sign operator and number 
+            println!("Invalid input. Pls follow the format: number operator number😡😡😡"); // this func we checking to make sure that the user input is equal yto 3 the number and the sign operator and number 
             continue;
         }
 
@@ -38,7 +39,7 @@ fn main() {
         let num2: f64 = match tokens[2].parse() {
             Ok(n) => n,
             Err(_) => {
-                println!("invalid secound number.");
+                println!("invalid second number.");
                 continue;
             }
         };
@@ -73,7 +74,7 @@ fn multiply(a: f64, b: f64) -> f64 {
 
 fn divide(a: f64, b: f64) -> f64 {
     if b == 0.0 {
-        println!("cannot divde by zero");
+        println!("cannot dived by zero");
         std::process::exit(1);
     }
     a / b
